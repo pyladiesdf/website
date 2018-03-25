@@ -1,19 +1,20 @@
-Title: Campanha PyLadies no PyBR[13] - reta final!
-Slug: campanha-pyladies-no-pybr-13-reta-final
-Date: 2017-08-30 10:27:46
-Tags: eventos, Python Brasil
-Category: PyBR
-Author: Letícia Monteiro
+Title: Retorno das PyLadies DF
+Slug: pyladiesdf-return
+Date: 2018-03-24 19:27:00
+Tags: PyLadies, Distrito Federal
+Category: PyLadiesDF
+Author: Dayanne Fernandes
 Comments: True
 
-Mais uma edição da [Python Brasil](http://2017.pythonbrasil.org.br/), a maior conferência da linguagem de programação Python no país, se aproxima. A décima terceira edição da PyBR será realizada em Belo Horizonte (MG), de 6 a 11 de outubro de 2017 - praticamente uma semana inteira de palestras, tutoriais e sprints de programação.
+Este ano, PyLadies DF (Distrito Federal) está voltando com força total ! PyLadies DF é uma comunidade local das [PyLadies Brasil][pyladiesbrasil] de incentivo a mulheres na área de tecnologia.
 
-Este ano, já estão confirmadas 16 atividades capitaneadas por mulheres durante o evento, das quais 13 por membros efetivos do PyLadies Brasil. Estamos nos preparando para superar o marco do ano passado, quando a PyBR teve a maior participação de mulheres em sua história. Para quebrar novamente esse recorde, mais uma vez abrimos uma campanha no [Catarse](https://www.catarse.me/projects/60945/posts/29526?/users/556357#about) com o fim de angariar fundos para levar as 18 PyLadies que solicitaram apoio financeiro e de outra maneira não poderiam comparecer ao evento.
+Este ano estamos preparando o Django Girls em Brasília/DF para ocorrer na data 11 de Agosto na UnB (Universidade de Brasília), campus Gama. Este evento é destinado a mulheres e utiliza o material do [Django Girls Book Tutorial][django_girls] para ensinar sobre Python, Django, como funciona a internet, entre outras informações relevantes da área de tecnologia.
 
-Estamos na reta final da campanha, com menos de 48h para atingir o valor que nos permita levar o maior número possível de Ladies à PyBR[13]. Para muitas delas, das quais 8 serão palestrantes, ir à Python Brasil é uma oportunidade única de adquirir conhecimento técnico e retornar para compartilhar o aprendizado com a sua comunidade local. [Você ainda pode doar](https://www.catarse.me/projects/60945/posts/29526?/users/556357#about) qualquer quantia até as 23:59 de amanhã, 31 de agosto. Seremos eternamente gratas pela sua colaboração! <3
+Nossa equipe organizadora do DG 2018 é composta por alunas, ex-alunas e pesquisadoras(es) da UnB, Uniceub, professores da UnB do campus Gama e membros do Calango Hackerclube.
 
-![Palestras de PyLadies na PyBR[13]]({filename}/images/campanha-pyladies-no-pybr-13-reta-final-/1.png)
-![Palestras de PyLadies na PyBR[13]]({filename}/images/campanha-pyladies-no-pybr-13-reta-final-/2.png)
-![Palestras de PyLadies na PyBR[13]]({filename}/images/campanha-pyladies-no-pybr-13-reta-final-/3.png)
-![Palestras de PyLadies na PyBR[13]]({filename}/images/campanha-pyladies-no-pybr-13-reta-final-/4.png)
-![Palestras de PyLadies na PyBR[13]]({filename}/images/campanha-pyladies-no-pybr-13-reta-final-/5.png)
+As mulheres que tenham interesse de participar da equipe do PyLadies DF e quer ajudar a promover as tecnologias entre as mulheres entre em contato pelo nosso [Facebook][facebook] ou [e-mail][email]. Lembrando que não há pré-requisitos para se envolver com nossa comunidade, todas as mulheres de todas as áreas serão bem vindas! <3
+
+[django_girls]: https://tutorial.djangogirls.org/pt/
+[facebook]: https://www.facebook.com/pyladiesdf
+[email]: brasilia@pyladies.com
+[pyladiesbrasil]:https://http://brasil.pyladies.com/

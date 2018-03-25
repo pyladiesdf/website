@@ -7,32 +7,7 @@ from facebook import GraphAPI
 
 # Should match the page ID on the URL (e.g. https://www.facebook.com/pyladies)
 PYLADIES_FACEBOOK_PAGES = [
-    'pyladies',
-    'PyLadiesBrazil',
-    'PyLadiesSP',
-    'pyladiescps',
-    'PyLadiesTeresina',
-    'PyLadiesNatal',
-    'PyLadiesDuqueDeCaxias',
-    'pyladiesvale',
-    'pyladiesfloripa',
-    'PyLadiesCuritiba',
     'pyladiesdf',
-    'pyladiesrp',
-    'PyLadiesSaoCarlos',
-    'pyladiesbh',
-    'pyladiespucrio',
-    'PyLadiesFortaleza',
-    'pyLadiesPHB',
-    'fundao.pyladies',
-    'pyladiesrio',
-    'PyLadiesPicos',
-    'pyladiesbelem',
-    'PyLadiesSalvador',
-    'pyladiesrecife',
-    'PyLadiesMaceio',
-    'pyladiespoa',
-    'PyLadiesSLZ',
 ]
 
 
