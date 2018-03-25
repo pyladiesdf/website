@@ -6,7 +6,6 @@ docutils==0.14
 facebook-sdk==2.0.0
 feedgenerator==1.9
 ghp-import==0.4.1
-gunicorn==19.7.1
 idna==2.6
 Jinja2==2.10
 Markdown==2.6.7
