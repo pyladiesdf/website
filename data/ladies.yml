@@ -46,6 +46,20 @@
   facebook: Bruna.Nayara.ML
   image: /images/ladies/bruna.jpeg
 
+- name: Jéssica Macedo
+  cidade: Vicente Pires - DF
+  url: http://calango.club/membros/jessica_macedo
+  github: jornalistadigital
+  facebook: jessicammacedo
+  twitter: jemmacedo
+  image: /images/ladies/jessica.jpeg
+
+- name: Carolina Ferreira
+  cidade: Santa Maria - DF
+  github: carolinaferreira
+  facebook: carolina.ferreira.144
+  image: /images/ladies/carolina.jpeg
+
 
 # Add yourself, following the alphabetical order. Here is the layout:
 # - name: seu nome aqui
