@@ -2,25 +2,49 @@
 # https://github.com/pyladiesdf/website/blob/master/CONTRIBUTING.md#adicionar-ladies
 
 
-- name: Dayanne Fernandes da Cunha
-  cidade: Brasília - DF
+- name: Dayanne Fernandes
+  cidade: Asa Norte - DF
   url: http://calango.club/membros/dayanne_fernandes
   github: Dayof
   facebook: daayoff
   image: /images/ladies/dayanne.jpg
 
-- name: Heloise Cullen Sampaio
-  cidade: Brasília - DF
+- name: Heloise Cullen
+  cidade: Asa Norte - DF
   github: Heloisecs
   facebook: heloise.cullen
   image: /images/ladies/heloise.jpg
 
 - name: Tânia Andrea
-  cidade: null - Canadá
+  cidade: Vancouver - Canadá
   url: http://calango.club/membros/taniaa
   github: taniaa
   twitter: taniaandrea_com
   image: /images/ladies/tania.jpg
+
+- name: Naiara Andrade
+  cidade: Gama - DF
+  github: naiieandrade
+  facebook: naiaraac
+  image: /images/ladies/naiara.jpg
+
+- name: Daniela Estevam
+  cidade: Sudoeste - DF
+  facebook: daniela.estevam.79
+  twitter: danielaestevam
+  image: /images/ladies/dani.jpeg
+
+- name: Talitha Pumar
+  cidade: Asa Norte - DF
+  github: tapumar
+  facebook: talitha.pumar
+  image: /images/ladies/talitha.jpeg
+
+- name: Bruna Moreira
+  cidade: Gama - DF
+  github: BrunaNayara
+  facebook: Bruna.Nayara.ML
+  image: /images/ladies/bruna.jpeg
 
 
 # Add yourself, following the alphabetical order. Here is the layout:
