@@ -46,6 +46,44 @@
   facebook: Bruna.Nayara.ML
   image: /images/ladies/bruna.jpeg
 
+- name: Jéssica Macedo
+  cidade: Vicente Pires - DF
+  url: http://calango.club/membros/jessica_macedo
+  github: jornalistadigital
+  facebook: jessicammacedo
+  twitter: jemmacedo
+  image: /images/ladies/jessica.jpeg
+
+- name: Carolina Ferreira
+  cidade: Santa Maria - DF
+  github: carolinaferreira
+  facebook: carolina.ferreira.144
+  image: /images/ladies/carolina.jpeg
+
+- name: Bruna Pinos
+  cidade: Águas Claras - DF
+  github: brunapinos
+  facebook: bruna.pinos
+  image: /images/ladies/brunapinos.jpeg
+
+- name: Izabela Cardoso
+  cidade: Gama - DF
+  github: izacristina
+  facebook: izabela.cristina.779
+  image: /images/ladies/iza.jpeg
+
+- name: Carla Rocha
+  cidade: Asa Sul - DF
+  github: RochaCarla
+  facebook: csaguiar
+  image: /images/ladies/carla.jpeg
+
+- name: Isabela Eifert
+  cidade: Lago Norte - DF
+  github: belaeifert
+  twitter: belaeifert
+  facebook: isabela.eifertcatanante
+  image: /images/ladies/isabelaeifert.jpeg
 
 # Add yourself, following the alphabetical order. Here is the layout:
 # - name: seu nome aqui
