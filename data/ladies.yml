@@ -85,6 +85,24 @@
   facebook: isabela.eifertcatanante
   image: /images/ladies/isabelaeifert.jpeg
 
+- name: Gabriela Alves
+  cidade: Samambaia Sul - DF
+  github: gag250
+  facebook: gag2502
+  image: /images/ladies/gabriela.jpeg
+
+- name: Renata Francelino
+  cidade: Arniqueiras - DF
+  github: Renatafsouza
+  facebook: renata.f.souza.902
+  image: /images/ladies/renata.jpeg
+
+- name: Letícia de Souza
+  cidade: Gama - DF
+  github: leticiadesouza
+  facebook: leticiades
+  image: /images/ladies/leticia.jpeg
+
 # Add yourself, following the alphabetical order. Here is the layout:
 # - name: seu nome aqui
 #   url: [optional] seu site pessoal
