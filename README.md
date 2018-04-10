@@ -1,6 +1,6 @@
 Site Pyladies DF
 ====================
-[![Build Status](https://app.codeship.com/projects/1bdf3940-1f08-0136-b2c4-6615eff06e0f/status?branch=master)](https://app.codeship.com/projects/1bdf3940-1f08-0136-b2c4-6615eff06e0f/status?branch=master)
+[![Build Status](https://app.codeship.com/projects/1bdf3940-1f08-0136-b2c4-6615eff06e0f/status?branch=dev)](https://app.codeship.com/projects/1bdf3940-1f08-0136-b2c4-6615eff06e0f/status?branch=dev)
 
 Contribuindo
 ------------
