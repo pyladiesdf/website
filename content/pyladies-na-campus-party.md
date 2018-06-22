@@ -10,7 +10,7 @@ Tá chegando a <strike>remarcada</strike> [Campus Party Brasília][cpbsb] que va
 
 Estamos muito engajadas com o primeiro [Django Girls][dg] que vai acontecer dia 11 de Agosto! As inscrições estão abertas até o dia 13 de Julho, caso não tenha se inscrito ou mandando pra aquela amiga que quer muito aprender a fazer seu próprio blog!
 
-Com toda a união dos nossos esforços estamos alcançando muitas mulheres, o que nos deixa muito felizes ver cada vez mais o interesse na área de programação, seja por hobbie ou interesse profissional. O que queremos é ser uma comunidade consolidade de mulheres que são da área de tecnologia em Brasília, e poder ser apoio para quem não conhece e quer começar e não sabe por onde!
+Através da nossa união e esforço, estamos alcançando cada vez mais mulheres e, com isso, nos sentindo mais felizes e estimuladas em despertar o interesse na área de programação, seja por hobbie ou pelo lado profissional. Queremos consolidar uma comunidade de mulheres da área de tecnologia em Brasília cada vez mais forte, podendo oferecer apoio para quem não conhece, quer começar, mas que não sabe por onde.
 
 Quer saber mais um pouco sobre a [comunidade][comunidadepyladies] e as meninas da PyLadies? A gente tem uma boa **notícia**! Estaremos na Campus Party Brasília com várias atividades nos dias 28, 29 e 30 de Junho, como roda de conversa, boa práticas em Python, ferramenta de versionamento e várias outras.
 
