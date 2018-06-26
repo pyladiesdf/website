@@ -5,10 +5,11 @@
     {% block extra_meta %}
     <meta name="description" content="{{ TAGLINE }}">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="{{ SITEURL }}/{{ DEFAULT_BG }}">
-    <meta name="twitter:title" content="{{ SITENAME }}">
-    <meta name="twitter:description" content="{{ TAGLINE }}">
-    <meta name="twitter:creator" content="@Pyladiesbrazil">
+    <meta property="twitter:image" content="{{ SITEURL }}/{{ DEFAULT_BG }}">
+    <meta property="twitter:image:alt" content="PyLadies DF">
+    <meta property="twitter:title" content="{{ SITENAME }}">
+    <meta property="twitter:description" content="{{ TAGLINE }}">
+    <meta name="twitter:creator" content="@pyladiesdf">
     {% if "staging" in SITEURL %}
         <meta name="robots" content="noindex">
     {% endif %}
