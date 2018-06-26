@@ -4,12 +4,6 @@
     {% include 'head.html' %}
     {% block extra_meta %}
     <meta name="description" content="{{ TAGLINE }}">
-    <meta name="twitter:card" content="summary">
-    <meta property="twitter:image" content="{{ SITEURL }}/{{ DEFAULT_BG }}">
-    <meta property="twitter:image:alt" content="PyLadies DF">
-    <meta property="twitter:title" content="{{ SITENAME }}">
-    <meta property="twitter:description" content="{{ TAGLINE }}">
-    <meta name="twitter:creator" content="@pyladiesdf">
     {% if "staging" in SITEURL %}
         <meta name="robots" content="noindex">
     {% endif %}
