@@ -621,40 +621,44 @@ nav.pagination {
     margin-left: 0.625rem; }
 
 .notepad-site-footer {
-  background: #ff3373; }
-  .notepad-site-footer.with-bg-cover {
-    background-color: rgba(0, 0, 0, 0.7); }
+  background: #ff3373;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
+.notepad-site-footer.with-bg-cover {
+  background-color: rgba(0, 0, 0, 0.7); }
+.notepad-site-footer .social-icons,
+.notepad-site-footer .copyright {
+  width: 100%;
+  padding: 0;
+  text-align: center; }
+.notepad-site-footer .copyright {
+  color: white;
+  float: none;
+  text-align: center;
+  font-size: 0.8125rem;
+  padding-top: 3.75rem;
+  padding-bottom: 1.25rem; }
+  .notepad-site-footer .copyright a {
+    color: white; }
+.notepad-site-footer .social-icons {
+  text-align: center;
+  float: none;
+  padding-bottom: 3.75rem; }
+  .notepad-site-footer .social-icons a {
+    color: #262626; }
+@media only screen and (min-width: 70em) {
   .notepad-site-footer .social-icons,
   .notepad-site-footer .copyright {
-    width: 100%;
-    padding: 0;
-    text-align: center; }
+    width: 49%;
+    padding: 1rem; }
   .notepad-site-footer .copyright {
-    color: white;
-    float: none;
-    text-align: center;
-    font-size: 0.8125rem;
-    padding-top: 3.75rem;
-    padding-bottom: 1.25rem; }
-    .notepad-site-footer .copyright a {
-      color: white; }
+    text-align: left;
+    float: left; }
   .notepad-site-footer .social-icons {
-    text-align: center;
-    float: none;
-    padding-bottom: 3.75rem; }
-    .notepad-site-footer .social-icons a {
-      color: #262626; }
-  @media only screen and (min-width: 70em) {
-    .notepad-site-footer .social-icons,
-    .notepad-site-footer .copyright {
-      width: 49%;
-      padding: 5rem; }
-    .notepad-site-footer .copyright {
-      text-align: left;
-      float: left; }
-    .notepad-site-footer .social-icons {
-      text-align: right;
-      float: right; } }
+    text-align: right;
+    float: right; } }
 
 
 .tag-template .notepad-index-post:first-of-type {
