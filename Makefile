@@ -1,4 +1,4 @@
-VIRTUALENV = virtualenv
+VIRTUALENV = virtualenv -p python3
 VENV := $(shell echo $${VIRTUAL_ENV-.venv})
 
 PY=$(VENV)/bin/python
@@ -65,6 +65,7 @@ up: html serve
 
 install: virtualenv
 	$(VENV)/bin/pip install -U pip
+	$(VENV)/bin/pip install --upgrade pip
 	$(VENV)/bin/pip install -U -r requirements.txt
 
 clean:
