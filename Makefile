@@ -1,4 +1,4 @@
-VIRTUALENV = virtualenv -p python3
+VIRTUALENV = virtualenv 
 VENV := $(shell echo $${VIRTUAL_ENV-.venv})
 
 PY=$(VENV)/bin/python
