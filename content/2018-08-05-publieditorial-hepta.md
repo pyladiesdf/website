@@ -20,8 +20,9 @@ desenvolvimento e consultoria.
 <figure>
     <img alt="Hetpa" src="{filename}/images/hepta.jpg"/>
     <figcaption>Da esquerda para direita,  Andressa Valadares
-    (Desenvolvedora Trainee), Silvia Küster (Gerente de Pessoas e
-    Competências), Hellen Cruz (Analista de Recrutamento e Seleção), Gabriella
+    (Desenvolvedora Trainee), Silvia Küster (Responsável pela área de
+    Desenvolvimento Humano e Organizacional), Hellen Cruz (Responsável
+    pela área de Recrutamento e Seleção), Gabriella
     Esteves (Analista de Desenvolvimento Junior).</figcaption>
 </figure>
 
