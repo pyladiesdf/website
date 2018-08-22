@@ -104,6 +104,13 @@
   facebook: leticiades
   image: /images/ladies/leticia.jpeg
 
+- name: Mariana Mendes
+  cidade: Jardim Botânico - DF
+  github: marimendes
+  twitter: LittleMah_
+  image: /images/ladies/marianamendes.jpg
+
+
 # Add yourself, following the alphabetical order. Here is the layout:
 # - name: seu nome aqui
 #   url: [optional] seu site pessoal

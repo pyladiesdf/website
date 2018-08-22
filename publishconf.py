@@ -8,7 +8,7 @@ sys.path.append('.')
 from pelicanconf import *
 
 STAGINGURL = 'https://pyladiesdf.herokuapp.com/'
-PRODURL = 'https://pyladiesdf.herokuapp.com/'
+PRODURL = 'http://df.pyladies.com/'
 
 SITEURL = PRODURL
 
