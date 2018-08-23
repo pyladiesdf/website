@@ -6,7 +6,7 @@ Category: DjangoGirlsDF
 Author: Ludimila Bela
 Comments: True
 
-## A imersão de um evento técnico para mulheres
+ A imersão de um evento técnico para mulheres
 
 Se alguém perguntasse para mim o que foi participar do Django Girls Brasília eu responderia: “você já abraçou quem você ama, fechou os olhos e sentiu um cheiro que só a pessoa tem?”
 
