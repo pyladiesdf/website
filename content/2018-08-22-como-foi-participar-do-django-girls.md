@@ -1,5 +1,5 @@
 Title: O Django Girls é para mulheres porque ainda é preciso
-Slug: participacao-cotidiano
+Slug: participacao-django
 Date: 2018-08-22 13:17:00
 Tags: PyLadies, Distrito Federal, Django Girls DF
 Category: DjangoGirlsDF
