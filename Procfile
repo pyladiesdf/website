@@ -1,1 +1,1 @@
-web: bin/launch-nginx
+web: launch-nginx
