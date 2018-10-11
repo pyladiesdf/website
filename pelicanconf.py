@@ -42,10 +42,10 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 MENUITEMS = (
-    ('Sobre', '/about'),
-    ('Ladies', '/ladies'),
-    ('Materiais', '/materiais'),
-    ('Blog', '/archives.html'),
+    ('Sobre', 'about'),
+    ('Ladies', 'ladies'),
+    ('Materiais', 'materiais'),
+    ('Blog', 'archives.html'),
 )
 
 DEFAULT_PAGINATION = 10

@@ -11,6 +11,7 @@
                 <a href="#"><i class="fa fa-times"></i></a>
             </li>
             {% for title, link in MENUITEMS %}
+            {{ SITEURL }}
             <li><a href="{{ SITEURL }}/{{ link }}">{{ title }}</a></li>
             {% endfor %}
         </ul>
