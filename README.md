@@ -1,10 +1,9 @@
 # PyLadies DF Website
-Como instalar o projeto:
 
-...
 
-Como executar o projeto :
+Como executar o projeto:
+
 ``` console
-$ source bin/env/activate
-(venv) $ python manage.py runserver
+$ source venv/bin/activate
+(venv) $ python manage.py runserver 0.0.0.0:8000
 ```
