@@ -34,7 +34,7 @@ $ make install
 
 ``` console
 $ source venv/bin/activate
-$ (venv) python manage.py runserver 0.0.0.0:8000
+(venv) $ python manage.py runserver 0.0.0.0:8000
 ```
 
 Abra o browser em [localhost:8000](http://localhost:8000) para ver o conteúdo gerado.
