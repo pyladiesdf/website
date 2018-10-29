@@ -53,3 +53,6 @@ env
 
 # Temporary
 *.yml~
+
+# database
+*db*
