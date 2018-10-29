@@ -1,11 +1,18 @@
 # PyLadies DF Website
 
-=======
-## Descrição do website PyLadies DF
+## DescriÃ§Ã£o do website PyLadies DF
 
-O website da PyLadies DF é um local para proporcionar um maior aprendizado e troca de conhecimentos sobre programação. Possui sugestões de materiais para estudos, nossas mídias sociais, link para o nosso blog e um fórum com as dúvidas mais recorrentes, que é respondido pela comudidade PyLadies.
+O website da PyLadies DF Ã© um local para proporcionar um maior aprendizado e troca de conhecimentos 
+sobre programaÃ§Ã£o. Possui sugestÃµes de materiais para estudos, nossas mÃ­dias sociais, link para o 
+nosso blog e um fÃ³rum com as dÃºvidas mais recorrentes, que Ã© respondido pela comudidade PyLadies.
 
-=======
+## Como executar o projeto:
+
+``` console
+$ source venv/bin/activate
+(venv) $ python manage.py runserver 0.0.0.0:8000
+```
+
 ## Quem Fez
 Esse website foi produzido pelas Pyladies DF.
 
