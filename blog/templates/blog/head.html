@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+<title>PyLadies DF</title>
+
+<meta property="og:site_name" content="PyLadies DF">
+<meta name="twitter:card" content="summary">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,300,800,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/css/normalize.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'blog/css/nprogress.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'blog/css/foundation.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'blog/css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'blog/css/post.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'blog/css/post.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'blog/tipuesearch/tipuesearch.css' %}">
+
+{% if page %}
+<!--Load Mathjax-->
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script>
+        MathJax.Hub.Config({
+            config: ["MMLorHTML.js"],
+            extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+            jax: ["input/TeX"],
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: false
+            },
+            TeX: {
+                TagSide: "right",
+                TagIndent: ".8em",
+                MultLineWidth: "85%",
+                equationNumbers: {
+                   autoNumber: "AMS",
+                },
+                unicode: {
+                   fonts: "STIXGeneral,'Arial Unicode MS'"
+                }
+            },
+            showProcessingMessages: false
+        });
+    </script>
+{% endif %}
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="{% static 'blog/img/favicon.ico' %}">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="{% static 'blog/img/favicon.png' %}">

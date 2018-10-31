@@ -1,0 +1,23 @@
+{% load static %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{% static 'blog/js/jquery-1.11.1.min.js' %}"><\/script>')</script>
+<script src="{% static 'blog/js/modernizr.js' %}"></script>
+<script src="{% static 'blog/js/foundation.min.js' %}"></script>
+
+{% if page %}
+<script src="{% static 'blog/js/background-check.js' %}"></script>
+<script src="{% static 'blog/js/post-header-animations.js' %}"></script>
+{% endif %}
+
+<script src="{% static 'blog/js/notepad.js' %}"></script>
+<script src="{% static 'blog/js/scripts.min.js' %}"></script>
+<script src="{% static 'blog/js/nprogress.js' %}"></script>
+<script src="{% static 'blog/tipuesearch/tipuesearch_set.js' %}"></script>
+<script src="{% static 'blog/tipuesearch/tipuesearch.min.js' %}"></script>
+<script>
+$().ready(function() {
+  $(".post-list").on("fn.tipuesearch", function() {
+    alert(1);
+  });
+});
+</script>
