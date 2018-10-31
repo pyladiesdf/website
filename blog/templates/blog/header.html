@@ -1,0 +1,22 @@
+{% load static %}
+
+<div class="notepad-site-head-menu">
+    <a class="notepad-blog-logo small-6 medium-3 columns" href="#">
+        <img width="146" height="60" src="{% static 'blog/img/pyladiesdf.png' %}" alt="Pyladies Logo" />
+    </a>
+    <div class="notepad-blog-menu small-12 medium-9 columns">
+        <div class="notepad-mobile-menu show-for-small">
+            <a href="#"><i class="fa fa-bars"></i></a>
+        </div>
+        <ul class="notepad-menu">
+            <li class="notepad-mobile-close-btn show-for-small text-right">
+                <a href="#"><i class="fa fa-times"></i></a>
+            </li>
+            <li><a href="{% url 'blog:about' %}">Sobre</a></li>
+            <li><a href="{% url 'blog:ladies' %}">Ladies</a></li>
+            <li><a href="{% url 'blog:material' %}">Materiais</a></li>
+            <li><a href="{% url 'blog:blog' %}">Blog</a></li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+</div>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    {% include 'blog/head.html' %}
+    {% block extra_meta %}
+      <meta name="description"
+            content="Ninguém pode fazer você se sentir inferior sem o seu consentimento (Eleanor Roosevelt)">
+    {% endblock %}
+	{% include 'blog/scripts.html' %}
+    </head>
+    <body class="{% block body_class %}{% endblock %}">
+        <header class="notepad-site-head">
+            {% include 'blog/header.html' %}
+            {% block extra_header %}{% endblock %}
+        </header>
+        <main class="notepad-content row" role="main">
+        {% block content %}{% endblock %}
+        </main>
+        {% include 'blog/footer.html' %}
+        {% include 'blog/scripts_footer.html' %}
+    </body>
+</html>
