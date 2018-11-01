@@ -25,7 +25,7 @@ SECRET_KEY = '1)v8&@!#+sr^n3#ppifle&=m*@%t%h77)33whql=pneew+s_)6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['df.pyladies.com', 'pyladiesdf.herokuapp.com']
 
 
 # Application definition
