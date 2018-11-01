@@ -20,7 +20,7 @@
         <ul class="post-list">
         {% for post in articles %}
           <li><article><i class="fa fa-star-half-o"></i>
-						<a href="{% url 'blog:about' %}">{{ post.title }}
+						<a href="{% url 'blog:article' slug=post.filename %}">{{ post.title }}
 							<span class="entry-author"> por {{ post.author }} </span>
 							<span class="entry-date">{{ post.date|iso_format }}</span>>
 						</a>
