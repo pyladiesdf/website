@@ -1,10 +1,10 @@
-Title: PyLadies na Campus Party
-Slug: pyladies-na-campus-party
-Date: 2018-06-21 20:51:16
-Tags: PyLadies, Brasília, Distrito Federal, Campus Party, CPBSB
-Category: PyLadiesDF
-Author: Naiara Andrade
-Comments: True
+title: PyLadies na Campus Party
+slug: pyladies-na-campus-party
+date: 2018-06-21 20:51:16
+tags: PyLadies, Brasília, Distrito Federal, Campus Party, CPBSB
+category: PyLadiesDF
+author: Naiara Andrade
+comments: True
 
 Tá chegando a <strike>remarcada</strike> [Campus Party Brasília][cpbsb] que vai acontecer na próxima semana nos dias 27 de Junho a 01 de Julho! E estamos muito felizes em participar como comunidade PyLadies!
 
