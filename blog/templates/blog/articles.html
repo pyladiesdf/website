@@ -1,0 +1,33 @@
+{% extends "blog/layouts/base.html" %}
+
+{% block title %}Pyladies DF - Blog{% endblock %}
+
+{% load static %}
+{% load datetime %}
+
+{% block content %}
+<article class="notepad-page-content">
+    <div class="title small-12 columns">
+        <h1>BLOG</h1>
+    </div>
+    <div class="entry-content">
+        <div>
+            <input type="text" maxlength="60" id="tipue_search_input" />
+        </div>
+        <div id="tipue_search_content"></div>
+    </div>
+    <div>
+        <ul class="post-list">
+        {% for post in articles %}
+          <li><article><i class="fa fa-star-half-o"></i>
+						<a href="{% url 'blog:article' slug=post.filename %}">{{ post.title }}
+							<span class="entry-author"> por {{ post.author }} </span>
+							<span class="entry-date">{{ post.date|iso_format }}</span>>
+						</a>
+					</article></li>
+        {% endfor %}
+        </ul>
+    </div>
+</article>
+<div class="cf"></div>
+{% endblock %}

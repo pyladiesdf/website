@@ -48,7 +48,11 @@ output
 
 # Virtualenv
 .venv
+venv
+env
 
 # Temporary
 *.yml~
 
+# database
+*db*

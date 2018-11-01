@@ -1,0 +1,51 @@
+{% extends "blog/layouts/base.html" %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% load static %}
+{% load datetime %}
+
+{% block extra_meta %}
+	{% if article.description %}
+		<meta name="description" content="{{ article.description }}">
+		<meta name="twitter:description" content="{{ article.description }}">
+		<meta property="og:description" content="{{ article.description }}">
+	{% endif %}
+
+	{% if article.imagefeatured %}
+		<meta name="twitter:image" content="{{ SITEURL }}/theme/images/{{ article.imagefeatured }}">
+		<meta property="og:image" content="{{ SITEURL }}/theme/images/{{ article.imagefeatured  }}">
+	{% endif %}
+
+	<meta name="twitter:title" content="{{ article.title }}">
+	<meta name="twitter:creator" content="@PyLadiesDF">
+	<meta property="og:locale" content="pt_BR">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="{{ article.title }}">
+	<!-- <meta property="og:url" content="{{ SITEURL }}/{{ article.url }}"> -->
+{% endblock %}
+
+{% block body_class %}post-template{% endblock %}
+
+{% block extra_header %}
+<div class="notepad-post-title-simple row">
+    <div class="small-12 columns">
+        <div class="notepad-post-meta-simple">
+            <h1>{{ article.title }}</h1>
+            <p>by {{ article.author }};
+					</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+	<article class="notepad-post-content post tag-simple">
+	    <div>
+	        {{ article.content|safe }}
+	    </div>
+	    <div class="cf"></div>
+      {% include 'blog/share.html' %}
+      <div class="cf"></div>
+	</article>
+{% endblock %}
