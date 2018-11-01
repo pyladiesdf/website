@@ -40,10 +40,6 @@ nosetests.xml
 .project
 .pydevproject
 
-# Pelican
-output
-*.pid
-
 *.DS_Store
 
 # Virtualenv
@@ -56,3 +52,6 @@ env
 
 # database
 *db*
+
+# django
+staticfiles
