@@ -1,2 +1,4 @@
 Django==2.1.2
+pathlib==1.0.1
 pytz==2018.7
+PyYAML==3.13

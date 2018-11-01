@@ -1,10 +1,10 @@
-Title: Retorno das PyLadies DF
-Slug: pyladiesdf-return
-Date: 2018-03-24 19:27:00
-Tags: PyLadies, Distrito Federal
-Category: PyLadiesDF
-Author: Dayanne Fernandes
-Comments: True
+title: Retorno das PyLadies DF
+slug: pyladiesdf-return
+date: 2018-03-24 19:27:00
+tags: PyLadies, Distrito Federal
+category: PyLadiesDF
+author: Dayanne Fernandes
+comments: True
 
 Este ano, PyLadies DF (Distrito Federal) está voltando com força total ! PyLadies DF é uma comunidade local das [PyLadies Brasil][pyladiesbrasil] de incentivo a mulheres na área de tecnologia.
 

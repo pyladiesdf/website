@@ -1,10 +1,10 @@
-Title: Obrigada, Espaço 365
-Slug: publieditorial-espaco365
-Date: 2018-08-08 12:30:00
-Tags: PyLadies, Distrito Federal, Django Girls DF
-Category: DjangoGirlsDF
-Author: Dayanne Fernandes
-Comments: True
+title: Obrigada, Espaço 365
+slug: publieditorial-espaco365
+date: 2018-08-08 12:30:00
+tags: PyLadies, Distrito Federal, Django Girls DF
+category: DjangoGirlsDF
+author: Dayanne Fernandes
+comments: True
 
 O nosso primeiro Django Girls DF se aproxima e não poderíamos estar mais
 felizes! Recepcionaremos 90 participantes e 30 monitoras no dia 11 de agosto
