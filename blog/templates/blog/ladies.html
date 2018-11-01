@@ -30,7 +30,7 @@
                 <p class="lady-city">{{ lady.cidade }}</p>
                 <div class="social-icons">
                   {% for item in medias %}
-                    {% if lady.item %}
+                    {% if item in lady %}
                     <a target="blank" href="http://{{ item }}.com/{{ lady.item }}">
                       <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
