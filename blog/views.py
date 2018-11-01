@@ -27,3 +27,16 @@ class ListLadies(ListView):
             except yaml.YAMLError as exc:
                 ladies = []
         return ladies
+
+
+class ListMaterials(ListView):
+    template_name = 'blog/materials.html'
+    context_object_name = 'materials'
+
+    def get_queryset(self):
+        with open(f'{Path(__file__).parents[0]}/content/materials.yml', 'r') as stream:
+            try:
+                materials = yaml.load(stream)
+            except yaml.YAMLError as exc:
+                materials = []
+        return materials

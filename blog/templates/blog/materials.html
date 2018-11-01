@@ -1,0 +1,36 @@
+{% extends 'blog/layouts/page.html' %}
+
+{% block title %}Pyladies DF - Materiais{% endblock %}
+
+{% block content %}
+<article class="notepad-page-content">
+  <div class="title small-12 columns">
+    <h1>MATERIAIS</h1>
+  </div>
+  <div>
+    <div id="archive">
+      <div class="wrap wrap-events">
+
+        <div class="large-12 columns-events">
+          <ul class="grid large-block-grid-6 locations-grid">
+            {% for material in materials %}
+            <li>
+              <div>
+                  <ul>
+                      <li>
+                          <b>Título:</b> {{material.title}}
+                      </li>
+                      <li>
+                          <b>Link:</b> <a href="{{ material.link }}">{{ material.link }}</a>
+                      </li>
+                  </ul>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{% endblock %}
