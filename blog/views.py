@@ -47,17 +47,6 @@ class ListArticles(ListView):
     template_name = 'blog/articles.html'
     context_object_name = 'articles'
 
-    def parse_article(self, html):
-        div = html.split('<p>')
-        attrs = div[1].replace('</p>', '').replace('\n', '').split('<br>')
-        attr_dict = {}
-        for attr in attrs:
-            key, value = attr.split(': ')
-            attr_dict[key] = value
-        content = "<p>".join(div[2:])
-        attr_dict['content'] = content
-        return attr_dict
-
     def get_queryset(self):
         local = Path(__file__).parents[0]
         articles_files = Path(f'{local}/content/articles/').glob('*')
@@ -67,14 +56,32 @@ class ListArticles(ListView):
             with open(f'{Path(__file__).parents[0]}/content/articles/{f.name}', 'r') as stream:
                 renderer = mistune.Renderer(escape=True, hard_wrap=True)
                 art = mistune.Markdown(renderer=renderer)
-                articles.append(self.parse_article(art.render(stream.read())))
+                articles.append(parse_article(art.render(stream.read()), f.name))
         return articles
 
 
 class ShowArticle(TemplateView):
-    template_name = "blog/index.html"
+    template_name = "blog/article.html"
 
     def get_context_data(self, **kwargs):
-        article_id = self.request.GET.get('slug')
-        print(article_id)
-        return super().get_context_data(**kwargs)
+        context = super(ShowArticle, self).get_context_data()
+        slug = self.kwargs['slug']
+        with open(f'{Path(__file__).parents[0]}/content/articles/{slug}.md', 'r') as stream:
+            renderer = mistune.Renderer(escape=True, hard_wrap=True)
+            art = mistune.Markdown(renderer=renderer)
+            article = parse_article(art.render(stream.read()), f'{slug}.md')
+        context['article'] = article
+        return context
+
+
+def parse_article(html, filename):
+    div = html.split('<p>')
+    attrs = div[1].replace('</p>', '').replace('\n', '').split('<br>')
+    attr_dict = {}
+    for attr in attrs:
+        key, value = attr.split(': ')
+        attr_dict[key] = value
+    content = "<p>".join(div[2:])
+    attr_dict['content'] = content
+    attr_dict['filename'] = filename[:-3]
+    return attr_dict
