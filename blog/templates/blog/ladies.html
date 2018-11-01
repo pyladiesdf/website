@@ -1,0 +1,51 @@
+{% extends 'blog/layouts/page.html' %}
+
+{% load static %}
+
+{% block title %}Pyladies DF - Ladies{% endblock %}
+{% block content %}
+<article class="notepad-page-content">
+  <div class="title small-12 columns">
+    <h1>LADIES</h1>
+  </div>
+  <div>
+    <div id="archive">
+      <div class="wrap wrap-events">
+        <div class="large-12 columns-events">
+          <ul class="grid large-block-grid-6 locations-grid">
+            {% for lady in ladies %}
+              <li class="location">
+                <div>
+
+                  <img src="  {% static 'blog/img/ladies/' %}{{ lady.image }}">
+                </div>
+                {% if lady.url %}
+                  <a target="blank" href="{{ lady.url }}">
+                    <span class="lady-name">{{ lady.name }}</span>
+                    <i class="fa fa-external-link lady-external-link" aria-hidden="true"></i>
+                  </a>
+                {% else %}
+                  <span class="lady-name">{{ lady.name }}</span>
+                {% endif %}
+                <p class="lady-city">{{ lady.cidade }}</p>
+                <div class="social-icons">
+                  {% for item in medias %}
+                    {% if item in lady %}
+                    <a target="blank" href="http://{{ item }}.com/{{ lady.item }}">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fa fa-{{ item }} fa-stack-1x"></i>
+                      </span>
+                    </a>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{% endblock %}
