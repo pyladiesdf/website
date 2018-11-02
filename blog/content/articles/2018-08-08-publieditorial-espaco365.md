@@ -28,10 +28,8 @@ permitindo um networking amplo e com novas possibilidades.
 *“É o primeiro empreendimento do Brasil neste formato. Possui uma proposta
 moderna, criativa e completamente integrada”* diz Flávio, sócio-fundador do
 espaço.
+![Espaço 365]({filename}/images/espaco365/esp3652.jpg)
 
-<figure>
-    <img alt="Espaço 365" src="{filename}/images/espaco365/esp3652.jpg"/>
-</figure>
 
 **Inovação** é uma das frentes do negócio. O espaço é o primeiro do Brasil com
 acesso aos ambientes totalmente por celular, sem chaves. Além do sistema
@@ -56,10 +54,11 @@ fornos elétricos, dois micro-ondas, geladeira de última geração e todos os
 utensílios necessários para a realização de reuniões e eventos. O ambiente
 ainda é integrado com varanda e living room.
 
-Conheça mais sobre o **Espaço 365** em:<br>
-- [espaco365.com.br][site]<br>
-- [facebook.com/espaco365bsb][facebook]<br>
-- [instagram.com/espaco365][instagram]<br>
+Conheça mais sobre o **Espaço 365** em:
+
+- [espaco365.com.br][site]
+- [facebook.com/espaco365bsb][facebook]
+- [instagram.com/espaco365][instagram]
 
 Entre em contato com eles através do e-mail contato@espaco365.com.br ou por
 telefone (61) 3703-0365.

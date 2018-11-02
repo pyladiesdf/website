@@ -6,7 +6,7 @@ category: PyLadiesDF
 author: Naiara Andrade
 comments: True
 
-Tá chegando a <strike>remarcada</strike> [Campus Party Brasília][cpbsb] que vai acontecer na próxima semana nos dias 27 de Junho a 01 de Julho! E estamos muito felizes em participar como comunidade PyLadies!
+Tá chegando a ~~remarcada~~ [Campus Party Brasília][cpbsb] que vai acontecer na próxima semana nos dias 27 de Junho a 01 de Julho! E estamos muito felizes em participar como comunidade PyLadies!
 
 Estamos muito engajadas com o primeiro [Django Girls][dg] que vai acontecer dia 11 de Agosto! As inscrições estão abertas até o dia 13 de Julho, caso não tenha se inscrito ou mandando pra aquela amiga que quer muito aprender a fazer seu próprio blog!
 
