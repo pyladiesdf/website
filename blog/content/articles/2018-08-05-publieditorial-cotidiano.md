@@ -20,11 +20,10 @@ se tornar realidade.
 ![samuel arantes]({filename}/images/cotidiano/c6.png "Samuel Arantes")
 ![wesley almeida]({filename}/images/cotidiano/c7.png "Wesley Almeida")
 
-<figure>
-  <figcaption>Da esquerda para direita, André Casimiro, André Faria,
-  André Froes, Eduardo Pinto, Henrique Guimarães, Samuel Arantes e
-  Wesley Almeida.</figcaption>
-</figure>
+
+![cotidiano]("" "Da esquerda para direita, André Casimiro, André Faria,
+André Froes, Eduardo Pinto, Henrique Guimarães, Samuel Arantes e
+Wesley Almeida.")
 
 A **Cotidiano** é uma aceleradora de startups situada em Brasília com mais de
 2 anos de atuação. Ela realiza investimentos de até 100 mil reais por startups
