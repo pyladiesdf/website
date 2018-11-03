@@ -1,9 +1,11 @@
+from django.contrib.staticfiles.templatetags.staticfiles import static
 from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
 
 from pathlib import Path
 import mistune
 import yaml
+import re
 
 
 class Home(TemplateView):
@@ -81,7 +83,13 @@ def parse_article(html, filename):
     for attr in attrs:
         key, value = attr.split(': ')
         attr_dict[key] = value
-    content = "<p>".join(div[2:])
+    content = "<p>" + "<p>".join(div[2:])
+    ctr = 0
+    img_static = static('blog/img/')
+    len_img_static = len(img_static)
+    for m in re.finditer('<img src="', content):
+        content = f'{content[:m.end()+ctr]}{img_static}{content[m.end()+ctr:]}'
+        ctr += len_img_static
     attr_dict['content'] = content
     attr_dict['filename'] = filename[:-3]
     return attr_dict
