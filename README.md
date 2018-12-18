@@ -24,7 +24,6 @@ $ venv\Scripts\activate
 (venv) $ pip install -r requirements.txt
 (venv) $ python manage.py runserver
 ```
-
 ## Quem Fez este website
 
 Esse website foi produzido pelas Pyladies DF.

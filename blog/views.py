@@ -69,7 +69,6 @@ class ShowArticle(TemplateView):
         return context
     
 """
-def parse_article(html):
     div = html.split('<p>')
     attrs = div[1].replace('</p>', '').replace('\n', '').split('<br>')
     attr_dict = {}
