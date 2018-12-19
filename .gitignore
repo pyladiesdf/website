@@ -51,7 +51,10 @@ env
 *.yml~
 
 # database
-*db*
+#*db*
+
+
+
 
 # django
 staticfiles

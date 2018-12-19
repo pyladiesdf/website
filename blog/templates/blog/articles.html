@@ -18,13 +18,16 @@
     </div>
     <div>
         <ul class="post-list">
-        {% for post in articles %}
-          <li><article><i class="fa fa-star-half-o"></i>
-						<a href="{% url 'blog:article' slug=post.filename %}">{{ post.title }}
-							<span class="entry-author"> por {{ post.author }} </span>
-							<span class="entry-date">{{ post.date|iso_format }}</span>>
-						</a>
-					</article></li>
+
+        {% for article in articles %}
+            <li>
+                <article><i class="fa fa-star-half-o"></i>
+                    <a href="{% url 'blog:article' slug=article.slug %}">{{ article.title }}
+                        <span class="entry-author"> por {{ article.author }} </span>
+                        <span class="entry-date">{{ article.date|date:"F d, Y" }}</span>>
+                    </a>
+                </article>
+            </li>
         {% endfor %}
         </ul>
     </div>

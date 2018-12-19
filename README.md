@@ -8,11 +8,22 @@ nosso blog e um fórum com as dúvidas mais recorrentes, que é respondido pela 
 
 ## Como executar o projeto
 
+### Linux
+
 ``` console
 $ source venv/bin/activate
 (venv) $ python manage.py runserver
 ```
 
+### Windows
+
+``` console
+$ cd website
+$ virtualenv venv
+$ venv\Scripts\activate
+(venv) $ pip install -r requirements.txt
+(venv) $ python manage.py runserver
+```
 ## Quem Fez este website
 
 Esse website foi produzido pelas Pyladies DF.

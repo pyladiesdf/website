@@ -1,9 +1,11 @@
 from django.contrib.staticfiles.templatetags.staticfiles import static
 from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
+from django.shortcuts import render
+
+from .models import Article
 
 from pathlib import Path
-import mistune
 import yaml
 import re
 
@@ -24,7 +26,7 @@ class ListLadies(ListView):
         return context
 
     def get_queryset(self):
-        with open(f'{Path(__file__).parents[0]}/content/ladies.yml', 'r') as stream:
+        with open(f'{Path(__file__).parents[0]}/content/ladies.yml', 'rb') as stream:
             try:
                 ladies = yaml.load(stream)
             except yaml.YAMLError as exc:
@@ -37,7 +39,7 @@ class ListMaterials(ListView):
     context_object_name = 'materials'
 
     def get_queryset(self):
-        with open(f'{Path(__file__).parents[0]}/content/materials.yml', 'r') as stream:
+        with open(f'{Path(__file__).parents[0]}/content/materials.yml', 'rb') as stream:
             try:
                 materials = yaml.load(stream)
             except yaml.YAMLError as exc:
@@ -46,37 +48,27 @@ class ListMaterials(ListView):
 
 
 class ListArticles(ListView):
-    template_name = 'blog/articles.html'
-    context_object_name = 'articles'
+    template_name = "blog/articles.html"
+    context_object_name = "articles"
+    model = Article
 
     def get_queryset(self):
-        local = Path(__file__).parents[0]
-        articles_files = Path(f'{local}/content/articles/').glob('*')
-        files = [article for article in articles_files if article.is_file()]
-        articles = []
-        for f in files:
-            with open(f'{Path(__file__).parents[0]}/content/articles/{f.name}', 'r') as stream:
-                renderer = mistune.Renderer(escape=True, hard_wrap=True)
-                art = mistune.Markdown(renderer=renderer)
-                articles.append(parse_article(art.render(stream.read()), f.name))
+        articles = super().get_queryset()
+        print(articles[0])
         return articles
-
 
 class ShowArticle(TemplateView):
     template_name = "blog/article.html"
-
+    model = Article
+    
     def get_context_data(self, **kwargs):
         context = super(ShowArticle, self).get_context_data()
         slug = self.kwargs['slug']
-        with open(f'{Path(__file__).parents[0]}/content/articles/{slug}.md', 'r') as stream:
-            renderer = mistune.Renderer(escape=True, hard_wrap=True)
-            art = mistune.Markdown(renderer=renderer)
-            article = parse_article(art.render(stream.read()), f'{slug}.md')
+        article = Article.objects.get(slug=slug)
         context['article'] = article
         return context
-
-
-def parse_article(html, filename):
+    
+"""
     div = html.split('<p>')
     attrs = div[1].replace('</p>', '').replace('\n', '').split('<br>')
     attr_dict = {}
@@ -91,5 +83,5 @@ def parse_article(html, filename):
         content = f'{content[:m.end()+ctr]}{img_static}{content[m.end()+ctr:]}'
         ctr += len_img_static
     attr_dict['content'] = content
-    attr_dict['filename'] = filename[:-3]
     return attr_dict
+"""
