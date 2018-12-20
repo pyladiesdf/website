@@ -1,0 +1,19 @@
+{% extends 'blog/layouts/page.html' %}
+{% load static %}
+{% block title %}Erro 404{% endblock %}
+
+{% block content %}
+    <article class="notepad-page-content">
+        <div class="title small-12 columns">
+            <h1>Erro 404</h1>
+            <p>O servidor não conseguiu encontrar a URL requisitada.</p>
+        </div>
+        <div>
+            <figure>
+                <img style="height: 230px; padding: -50px;" src="{% static 'blog/img/logo.png' %}" alt="PyLadies">
+            </figure>
+        </div>
+    </article>
+    <div class="cf"></div>
+
+{% endblock %}
