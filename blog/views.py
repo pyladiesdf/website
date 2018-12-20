@@ -1,7 +1,8 @@
 from django.contrib.staticfiles.templatetags.staticfiles import static
 from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
-from django.shortcuts import render
+from django.template import RequestContext
+from django.shortcuts import render, get_object_or_404, redirect
 
 from .models import Article
 
@@ -54,34 +55,15 @@ class ListArticles(ListView):
 
     def get_queryset(self):
         articles = super().get_queryset()
-        print(articles[0])
         return articles
 
 class ShowArticle(TemplateView):
     template_name = "blog/article.html"
     model = Article
-    
+
     def get_context_data(self, **kwargs):
         context = super(ShowArticle, self).get_context_data()
         slug = self.kwargs['slug']
-        article = Article.objects.get(slug=slug)
+        article = get_object_or_404(Article, slug=slug)
         context['article'] = article
         return context
-    
-"""
-    div = html.split('<p>')
-    attrs = div[1].replace('</p>', '').replace('\n', '').split('<br>')
-    attr_dict = {}
-    for attr in attrs:
-        key, value = attr.split(': ')
-        attr_dict[key] = value
-    content = "<p>" + "<p>".join(div[2:])
-    ctr = 0
-    img_static = static('blog/img/')
-    len_img_static = len(img_static)
-    for m in re.finditer('<img src="', content):
-        content = f'{content[:m.end()+ctr]}{img_static}{content[m.end()+ctr:]}'
-        ctr += len_img_static
-    attr_dict['content'] = content
-    return attr_dict
-"""
