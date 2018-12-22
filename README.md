@@ -12,7 +12,7 @@ nosso blog e um fórum com as dúvidas mais recorrentes, que é respondido pela 
 
 ``` console
 $ source venv/bin/activate
-(venv) $ python manage.py runserver
+(venv) $ export DEBUG=True; python manage.py runserver
 ```
 
 ### Windows
