@@ -109,7 +109,10 @@
 
 # Add yourself, following the alphabetical order. Here is the layout:
 # - name: seu nome aqui
+#   cidade: origem da lady
 #   url: [optional] seu site pessoal
 #   github: [optional] seu usuario github
+#   facebook: [optional] seu usuario facebook
 #   twitter: [optional] seu usuario no twitter
-#   image: lady.png [para mudar a foto, caso queira, basta adicionar a foto em /img/ladies e mudar o caminho aqui]
+#   image: lady.png [para mudar a foto, caso queira, basta adicionar a foto 
+#          em blog/static/blog/img/ladies e mudar o nome do arquivo aqui]

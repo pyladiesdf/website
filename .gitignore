@@ -50,11 +50,8 @@ env
 # Temporary
 *.yml~
 
-# database
-#*db*
-
-
-
-
 # django
 staticfiles
+
+# vscode
+.vscode/
