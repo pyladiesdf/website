@@ -589,6 +589,10 @@ main, .notepad-share-icons, .notepad-disqus {
       margin-left: 0;
       margin-right: 0.3125rem; } }
 
+.notepad-content .notepad-post-content.post {
+  padding-bottom: 80px;
+}
+
 nav.pagination {
   padding: 5px;
   margin-bottom: 20px;
@@ -638,14 +642,14 @@ nav.pagination {
   float: none;
   text-align: center;
   font-size: 0.8125rem;
-  padding-top: 3.75rem;
+  padding-top: 0.75rem;
   padding-bottom: 1.25rem; }
   .notepad-site-footer .copyright a {
     color: white; }
 .notepad-site-footer .social-icons {
   text-align: center;
   float: none;
-  padding-bottom: 3.75rem; }
+  padding-bottom: 0.75rem; }
   .notepad-site-footer .social-icons a {
     color: #262626; }
 @media only screen and (min-width: 70em) {
