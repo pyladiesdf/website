@@ -81,9 +81,17 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default='sqlite:////{0}'.format(os.path.join(BASE_DIR, 'db.sqlite3'))
-    )
+    #'default': dj_database_url.config(
+    #    default='sqlite:////{0}'.format(os.path.join(BASE_DIR, 'db.sqlite3'))
+    #)
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'djangogirls',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
 }
 
 
