@@ -23,8 +23,3 @@ urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('', include('blog.urls', namespace='blog')),
 ]
-
-# DEVELOPMENT ONLY
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL,
-                          document_root=settings.MEDIA_ROOT)

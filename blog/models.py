@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils import timezone
-from ckeditor_uploader.fields import RichTextUploadingField
+from ckeditor.fields import RichTextField
 
 class Tag(models.Model):
     name = models.CharField(max_length=50)
@@ -16,7 +16,7 @@ class Article(models.Model):
     category = models.CharField(max_length=200)
     author = models.CharField(max_length=200)
     comments = models.BooleanField(default=True)
-    content = RichTextUploadingField()
+    content = RichTextField()
 
     def __str__(self):
         return self.title
