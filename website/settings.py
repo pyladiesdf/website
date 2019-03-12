@@ -29,7 +29,6 @@ DEBUG = os.getenv('DEBUG') == 'True'
 ALLOWED_HOSTS = ['df.pyladies.com', 'pyladiesdf.herokuapp.com', '127.0.0.1',
                  'localhost', 'pyladies-staging.herokuapp.com']
 
-
 # Application definition
 
 INSTALLED_APPS = [
