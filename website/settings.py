@@ -27,7 +27,7 @@ SECRET_KEY = '1)v8&@!#+sr^n3#ppifle&=m*@%t%h77)33whql=pneew+s_)6'
 DEBUG = os.getenv('DEBUG') == 'True'
 
 ALLOWED_HOSTS = ['df.pyladies.com', 'pyladiesdf.herokuapp.com', '127.0.0.1',
-                 'localhost', 'pyladies-staging.herokuapp.com']
+                 'localhost']
 
 # Application definition
 
@@ -80,15 +80,12 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    #'default': dj_database_url.config(
-    #    default='sqlite:////{0}'.format(os.path.join(BASE_DIR, 'db.sqlite3'))
-    #)
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
+        'NAME': 'dfah27g8jgg2us',
+        'USER': 'tjpaaxmfulomzh',
+        'PASSWORD': 'e9e225a09efdcfda293393528a7d48f85f7dedd764f679462ce54eacf9d04427',
+        'HOST': 'ec2-50-19-109-120.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
