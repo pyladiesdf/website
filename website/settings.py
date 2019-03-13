@@ -81,12 +81,9 @@ WSGI_APPLICATION = 'website.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd1kh1g0e1h13bm',
-        'USER': 'ayycthgybblfvc',
-        'PASSWORD': '',
-        'HOST': 'ec2-23-23-241-119.compute-1.amazonaws.com',
-        'PORT': '5432',
+        dj_database_url.config(
+            default = os.getenv('DATABASE_URL')
+        )
     }
 }
 
