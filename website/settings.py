@@ -79,13 +79,12 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+
+
 DATABASES = {
-    'default': {
-        dj_database_url.config(
-            #default = os.getenv('DATABASE_URL')
-            default = 'postgres://ayycthgybblfvc:364ccfebffdc57ec896aa1a9104c2e8656721921910f6ac1f8c3036dd156ae7f@ec2-23-23-241-119.compute-1.amazonaws.com:5432/d1kh1g0e1h13bm'
-        )
-    }
+    'default': dj_database_url.config(
+        default=os.getenv('DATABASE_URL')
+    )
 }
 
 
