@@ -8,10 +8,14 @@ nosso blog e um fórum com as dúvidas mais recorrentes, que é respondido pela 
 
 ## Como executar o projeto
 
-### Linux
+### Linux / Mac
 
 ``` console
+$ cd website
+$ virtualenv venv
 $ source venv/bin/activate
+(venv) $ pip install -r requirements.txt
+(venv) python manage.py collectstatic
 (venv) $ export DEBUG=True; python manage.py runserver
 ```
 
@@ -22,6 +26,7 @@ $ cd website
 $ virtualenv venv
 $ venv\Scripts\activate
 (venv) $ pip install -r requirements.txt
+(venv) python manage.py collectstatic
 (venv) $ python manage.py runserver
 ```
 ## Quem Fez este website
