@@ -3,7 +3,7 @@ django==2.0.8
 django-heroku==0.3.1
 gunicorn==19.9.0
 pathlib==1.0.1
-psycopg2==2.7.5
+psycopg2-binary==2.7.5
 pytz==2018.7
 PyYAML==3.13
 whitenoise==4.1
