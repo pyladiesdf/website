@@ -5,8 +5,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 if __name__ == '__main__':
-    debug = os.getenv('DEBUG', True)
-    if debug:  # local
+    mode = os.getenv('MODE', 'local')
+    if mode == 'local':  # not docker, not heroku, only local
         os.environ.setdefault('DATABASE_URL',
                               'sqlite:////{0}'.format(os.path.join(BASE_DIR, 'db.sqlite3')))
 

@@ -31,9 +31,23 @@ $ cd website
 $ virtualenv venv
 $ venv\Scripts\activate
 (venv) $ pip install -r requirements.txt
-(venv) python manage.py collectstatic
+(venv) $ python manage.py collectstatic
 (venv) $ python manage.py runserver
 ```
+
+### Docker
+
+``` console
+$ docker-compose up
+```
+
+Para rodar as migrações, execute os seguintes comandos:
+
+``` console
+$ docker-compose exec site python manage.py makemigrations
+$ docker-compose exec site python manage.py migrate
+```
+
 ## Quem Fez este website
 
 Esse website foi produzido pelas Pyladies DF.
