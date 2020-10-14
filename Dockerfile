@@ -1,15 +1,14 @@
-FROM python:3.7
+FROM python:3.8
+
+ENV DEBUG=TRUE
 
 WORKDIR /site
 
-ADD requirements.txt /site/
+COPY requirements.txt ./
 
-RUN pip install -r requirements.txt
-
-ADD . /site/
+RUN pip install -U pip && \
+    pip install -r requirements.txt
 
 EXPOSE 8080
-
-ENV DEBUG=TRUE
 
 CMD python manage.py runserver 0.0.0.0:8080
