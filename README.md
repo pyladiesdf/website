@@ -8,14 +8,19 @@ nosso blog e um fórum com as dúvidas mais recorrentes, que é respondido pela 
 
 ## Como executar o projeto
 
+### Requisitos do sistema
+
+- Python 3.8.5
+
 ### Linux / Mac
 
 ``` console
 $ cd website
-$ virtualenv venv
+$ python -m venv venv
 $ source venv/bin/activate
+(venv) $ pip install -U pip
 (venv) $ pip install -r requirements.txt
-(venv) python manage.py collectstatic
+(venv) $ python manage.py collectstatic
 (venv) $ export DEBUG=True; python manage.py runserver
 ```
 
