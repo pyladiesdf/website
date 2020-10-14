@@ -1,14 +1,17 @@
 FROM python:3.8
 
-ENV DEBUG=TRUE
+ENV DEBUG=TRUE \
+    MODE=docker
 
-WORKDIR /site
+EXPOSE 8080
+
+WORKDIR /usr/src/app
 
 COPY requirements.txt ./
 
 RUN pip install -U pip && \
     pip install -r requirements.txt
 
-EXPOSE 8080
+COPY . .
 
-CMD python manage.py runserver 0.0.0.0:8080
+ENTRYPOINT python manage.py runserver 0.0.0.0:8080

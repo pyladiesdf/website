@@ -5,16 +5,17 @@ services:
         build: .
         ports:
             - 8080:8080
-        volumes: 
-            - .:/site
         environment: 
             DATABASE_URL: postgresql://postgres:postgres@db:5432/postgres
+        links:
+            - db:postgres
         depends_on: 
             - db
     db:
         image: postgres
+        restart: always
         ports: 
-            - 5432:5432
+            - 5433:5432
         environment: 
             POSTGRES_PASSWORD: postgres
         

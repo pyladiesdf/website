@@ -26,7 +26,7 @@ $ cd website
 $ virtualenv venv
 $ venv\Scripts\activate
 (venv) $ pip install -r requirements.txt
-(venv) python manage.py collectstatic
+(venv) $ python manage.py collectstatic
 (venv) $ python manage.py runserver
 ```
 
